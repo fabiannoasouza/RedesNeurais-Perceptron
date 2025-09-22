@@ -33,14 +33,7 @@ Matematicamente, o processo pode ser resumido em duas etapas:
 y = f \left( \sum_{i=1}^{n} w_i x_i + b \right)
 ```
 
-3.  **Aplicação da Função de Ativação (`f`):** O resultado `z` é então passado por uma função de ativação (no caso do Perceptron clássico, uma função degrau) para produzir a saída final.
-
-```math
-y = \begin{cases}
-1 & \text{se } z > 0 \\
-0 & \text{caso contrário}
-\end{cases}
-```
+3.  **Aplicação da Função de Ativação (`f`):** O resultado `z` é então passado por uma função de ativação (no caso do Perceptron clássico, uma função degrau) para produzir a saída final. Estudaremos mais adiante os tipos de funções de ativação.
 
 ---
 
@@ -66,6 +59,7 @@ Abaixo estão os tipos mais comuns.
 ---
 
 > #### 4.1 Função Degrau (Step Function)
+> ![Função Degrau](https://img.shields.io/badge/Função_de_Ativação-Função_Degrau-808080?style=for-the-badge)
 
 É a função de ativação mais simples, usada no Perceptron clássico. Ela produz uma saída binária.
 
@@ -83,6 +77,7 @@ Abaixo estão os tipos mais comuns.
 ---
 
 > #### 4.2 Função Sigmoide (Sigmoid)
+> ![Função Sigmoide](https://img.shields.io/badge/Função_de_Ativação-Função_Sigmoide-orange?style=for-the-badge)
 
 Historicamente popular, a função Sigmoide mapeia qualquer valor de entrada para uma faixa entre 0 e 1.
 
@@ -102,6 +97,7 @@ Historicamente popular, a função Sigmoide mapeia qualquer valor de entrada par
 ---
 
 > #### 4.3 Função Tangente Hiperbólica (Tanh)
+> ![Tangente Hiperbólica](https://img.shields.io/badge/Função_de_Ativação-Tangente_Hiperbólica-008080?style=for-the-badge)
 
 A Tanh é muito semelhante à Sigmoide, mas mapeia os valores para uma faixa entre -1 e 1.
 
@@ -118,6 +114,7 @@ A Tanh é muito semelhante à Sigmoide, mas mapeia os valores para uma faixa ent
 ---
 
 > #### 4.4 Função Unidade Linear Retificada (ReLU)
+> ![ReLU](https://img.shields.io/badge/Função_de_Ativação-ReLU-brightgreen?style=for-the-badge)
 
 A ReLU é a função de ativação mais popular e amplamente utilizada em redes neurais profundas hoje em dia, especialmente em camadas ocultas.
 
@@ -135,6 +132,7 @@ A ReLU é a função de ativação mais popular e amplamente utilizada em redes 
 ---
 
 > #### 4.5 Leaky ReLU (ReLU com Vazamento)
+> ![Leaky ReLU](https://img.shields.io/badge/Função_de_Ativação-Leaky_ReLU-yellow?style=for-the-badge&logoColor=black)
 
 É uma variação da ReLU projetada para resolver o problema do neurônio "morto".
 
@@ -153,6 +151,7 @@ A ReLU é a função de ativação mais popular e amplamente utilizada em redes 
 ---
 
 > #### 4.6 Função Softmax
+> ![Softmax](https://img.shields.io/badge/Função_de_Ativação-Softmax-4B0082?style=for-the-badge)
 
 A Softmax é um caso especial. Ela não é usada em camadas ocultas, mas sim na **camada de saída de classificadores multiclasse**.
 
